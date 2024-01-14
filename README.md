@@ -1,16 +1,33 @@
-# ggoma
+# GGOMA
 
-This project is 2024 Winter App Project (GGOMA) !
+> 알바, 카드혜택, 적금 ... 
+> 사회초년생에게는 막막하기만 단어들 ...
+> 꿀정보를 주는 앱이 있다 ?!
+> 사회초년생 필수어플 "꼬마사원"
 
-## Getting Started
+## 사용 방법
+* link : (비고)
 
-This project is a starting point for a Flutter application.
+## 기술 스택
+### Front-End
+* flutter
+* dio lib
+* getX lib
+* MVC model
 
-A few resources to get you started if this is your first Flutter project:
+### Back-End
+* Spring-boot
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Design
+* Pigma
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Cooperation Tool
+* Notion
+* Kakao Talk
+* Github
+
+## Developers
+프론트엔드|프론트엔드|백엔드|백엔드|디자이너|디자이너
+---|---|---|---|---|---|---|
+공태윤|오은진|임서연|황서은|박서하|김지유 
+
