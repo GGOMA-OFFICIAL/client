@@ -4,9 +4,12 @@ import 'view/HomeView.dart';
 import 'view/QuizView.dart';
 import 'view/CardPostView.dart';
 import 'view/WorkPostView.dart';
+import 'LoginView.dart';
+import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
 
 void main() {
-  runApp(GetMaterialApp(home: Main()));
+  KakaoSdk.init(nativeAppKey: '34f7562a97bfec0487353991c1529ab6');
+  runApp(GetMaterialApp(home: LoginPage()));
 }
 
 class Main extends StatelessWidget {
