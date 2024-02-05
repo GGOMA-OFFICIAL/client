@@ -1,0 +1,60 @@
+{
+  "status": 200,
+  "totaldatacount": 7,
+  "data": [
+    {
+      "post_title": "근로계약서 쓸 때는 이렇게?",
+      "post_tag": [
+        "#근로계약서",
+        "#아르바이트"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_1280.jpg"
+    },
+    {
+      "post_title": "제목2",
+      "post_tag": [
+        "#tag1",
+        "#tag2"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2015/05/31/13/45/working-791849_1280.jpg"
+    },
+    {
+      "post_title": "제목3",
+      "post_tag": [
+        "#tag1",
+        "#tag2"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2017/05/09/13/33/laptop-2298286_1280.png"
+    },
+    {
+      "post_title": "제목4",
+      "post_tag": [
+        "#tag1",
+        "#tag2"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_1280.jpg"
+    },
+    {
+      "post_title": "제목5",
+      "post_tag": [
+        "#tag1",
+        "#tag2"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2018/03/03/20/02/laptop-3196481_1280.jpg"},
+    {
+      "post_title": "제목6",
+      "post_tag": [
+        "#tag1",
+        "#tag2"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_1280.jpg"},
+    {
+      "post_title": "기이이이이이이이이ㅣ이이이이이이인제목",
+      "post_tag": [
+        "#tag1",
+        "#tag2"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2017/04/25/22/28/despaired-2261021_1280.jpg"
+    }
+  ]
+}
