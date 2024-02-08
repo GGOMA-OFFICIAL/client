@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'dart:convert';
 import '../model/scrap_model.dart';
 
-class ScrapController extends GetxController {
+class CardScrapController extends GetxController {
   var Scraps = ScrapModel().obs;
 
   @override
@@ -15,7 +15,7 @@ class ScrapController extends GetxController {
   Future<void> fetchScrapsFromLocalJson() async {
     try {
       final String response = await rootBundle.loadString(
-          'assets/test/scrap.json');
+          'assets/test/cardscrap.json');
       final data = json.decode(response);
       Scraps.value = ScrapModel.fromJson(data);
     } catch (e) {
@@ -26,7 +26,7 @@ class ScrapController extends GetxController {
 
   Future<bool> getScrapStatus(int postId) async {
     // JSON 파일 로드
-    final String response = await rootBundle.loadString('assets/test/scrap.json');
+    final String response = await rootBundle.loadString('assets/test/cardscrap.json');
     final Map<String, dynamic> jsonData = json.decode(response);
 
 

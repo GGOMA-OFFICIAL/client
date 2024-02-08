@@ -1,10 +1,10 @@
-class WorkPostModalModel {
+class PostModalModel {
   int? status;
   Data? data;
 
-  WorkPostModalModel({this.status, this.data});
+  PostModalModel({this.status, this.data});
 
-  WorkPostModalModel.fromJson(Map<String, dynamic> json) {
+  PostModalModel.fromJson(Map<String, dynamic> json) {
     status = json['status'];
     data = json['data'] != null ? new Data.fromJson(json['data']) : null;
   }

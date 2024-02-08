@@ -1,28 +1,45 @@
 {
-  "status" : 200,
-  "data" : {
-      "post_id" : 1,
-      "post_title" : "근로계약서 쓸 때는 이렇게?",
-      "post_paragraph" : 4,
-      "post_text" : [
-        {
-          "paragraph_title" : "\uD83C\uDF37 근로계약서?",
-          "paragraph_contents" : "\n근로자가 고용자의 요구에 따라 일을 하며 이에 따른 대가로 고용자가 임금을 지불하기로 한 계약입니다. 근로계약기간, 근무장소, 근로 시간, 임금 등의 여러 중요한 정보들이 작성되어 있습니다."
-        },
-        {
-          "paragraph_title" : "\uD83C\uDF37 근로계약서에 담겨야 하는 필수 사항",
-          "paragraph_contents" : "\n- 근무 장소 및 업무 내용\n- 임금 구성항목 (급여, 상여금, 수당 등)\n- 임금 계산 방법\n- 소정 근로시간\n- 업무의 시작과 종료 시간, 휴게 시간\n- 휴일 및 ‘연차 유급 휴가’ (단, 연차 휴가는 4인 이하 사업장은 미적용)"
-        },
-        {
-          "paragraph_title" : "\uD83C\uDF37 근로계약서 작성 방법",
-          "paragraph_contents" : "\n계약서를 작성할 때는 정해진 근로기준법에 맞게 작성해야 합니다. 고용자와 근로자가 함께 협의하여 계약기간 및 근무시간을 작성하고, 근로자는 고용자가 사전에 명시한 것과 계약서가 일치하는지 확인한 후 계약해야 합니다. 계약을 할 때는 본인의 서명이 반드시 필요하며 본인의 서명이 없다면 계약서 자체가 무효처리 됩니다. 또한 근로계약서의 내용이 법률에 위반된다면 계약서의 효력이 사라집니다."
-
-        },
-        {
-          "paragraph_title" : "\uD83C\uDF37 근로 계약서를 써야하는 이유",
-          "paragraph_contents" : "\n근로계약서는 근로자뿐만 아니라 사업자의 권익보호를 위해서도 꼭 써야합니다. 근로계약서를 작성하지 않거나 거부하는 경우 500 만원 이하의 과태료 처분을 받을 수 있습니다."
-        }
-      ]
+  "status": 200,
+  "totaldatacount": 5,
+  "data": [
+    {
+      "post_title": "어려운 카드용어 한방정리!",
+      "post_tag": [
+        "#카드",
+        "#용어"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2016/08/10/15/01/credit-cards-1583534_1280.jpg"
+    },
+    {
+      "post_title": "제목2",
+      "post_tag": [
+        "#tag1",
+        "#tag2"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603_1280.jpg"
+    },
+    {
+      "post_title": "제목3",
+      "post_tag": [
+        "#tag1",
+        "#tag2"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2014/02/01/18/01/money-256319_1280.jpg"},
+    {
+      "post_title": "제목4",
+      "post_tag": [
+        "#tag1",
+        "#tag2"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2015/02/05/08/10/iphone-624709_1280.jpg"
+    },
+    {
+      "post_title": "기이이이이이이이이ㅣ이이이이이이인제목",
+      "post_tag": [
+        "#tag1",
+        "#tag2"
+      ],
+      "post_image": "https://cdn.pixabay.com/photo/2016/10/10/22/37/credit-card-1730085_1280.jpg"
     }
-
+  ]
 }

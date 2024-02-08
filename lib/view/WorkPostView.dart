@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
-import '../controller/post_controller.dart';
-import '../controller/scrap_controller.dart';
+import '../controller/workpost_controller.dart';
+import '../controller/workscrap_controller.dart';
 import 'package:flutter/material.dart';
 
-import 'post.dart';
+import 'Post.dart';
 
 class WorkPostPage extends StatefulWidget {
   const WorkPostPage({super.key});
@@ -13,8 +13,8 @@ class WorkPostPage extends StatefulWidget {
 }
 
 class _WorkPostPageState extends State<WorkPostPage> {
-  final PostController postcontroller = Get.put(PostController());
-  final ScrapController scrapcontroller = Get.put(ScrapController());
+  final WorkPostController postcontroller = Get.put(WorkPostController());
+  final WorkScrapController scrapcontroller = Get.put(WorkScrapController());
 
   @override
   Widget build(BuildContext context) {
@@ -43,15 +43,15 @@ class _WorkPostPageState extends State<WorkPostPage> {
               Expanded(
                 // ListView.builder를 Expanded로 감싸기
                 child: ListView.builder(
-                  itemCount: postcontroller.Posts.value.totaldatacount,
+                  itemCount: postcontroller.WorkPosts.value.totaldatacount,
                   shrinkWrap: true, // shrinkWrap 설정
                   itemBuilder: (context, index) {
-                    final posts = postcontroller.Posts.value.data?[index];
+                    final posts = postcontroller.WorkPosts.value.data?[index];
                     final scraps = scrapcontroller.getScrapStatus(index);
                     return Column(
                       children: [
                         posts != null
-                            ?  Post(
+                            ?  WorkPost(
                                     data: posts,
                                     scrap: scraps,
                                   )
