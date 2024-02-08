@@ -1,10 +1,10 @@
-class CardPostModel {
+class WorkPostModalModel {
   int? status;
   Data? data;
 
-  CardPostModel({this.status, this.data});
+  WorkPostModalModel({this.status, this.data});
 
-  CardPostModel.fromJson(Map<String, dynamic> json) {
+  WorkPostModalModel.fromJson(Map<String, dynamic> json) {
     status = json['status'];
     data = json['data'] != null ? new Data.fromJson(json['data']) : null;
   }

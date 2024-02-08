@@ -1,10 +1,10 @@
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:get/get.dart';
 import 'dart:convert';
-import '../model/cardpost_model.dart';
+import '../model/workpostmodal_model.dart';
 
-class CardPostController extends GetxController{
-  var Cards = CardPostModel().obs;
+class WorkPostModalController extends GetxController{
+  var Cards = WorkPostModalModel().obs;
 
   @override
   void onInit(){
@@ -16,7 +16,7 @@ class CardPostController extends GetxController{
       final String response = await rootBundle.loadString(
           'assets/test/workpost_m.json');
       final data = json.decode(response);
-      Cards.value = CardPostModel.fromJson(data);
+      Cards.value = WorkPostModalModel.fromJson(data);
     } catch (e) {
       // 오류 처리
       print('JSON 파일 로드 또는 파싱 중 오류 발생: $e');

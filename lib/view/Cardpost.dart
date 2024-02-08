@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import '../controller/cardpost_controller.dart';
+import '../controller/workpostmodal_controller.dart';
 
 void card_post_modal(BuildContext context, String post_title, String tag1,
     String tag2, String post_image) {
-  final CardPostController cardpostcontroller = Get.put(CardPostController());
+  final WorkPostModalController cardpostcontroller = Get.put(WorkPostModalController());
 
   showModalBottomSheet(
       context: context,
