@@ -36,7 +36,9 @@ class _PostState extends State<Post> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        post_modal(context, widget.data!.postTitle!,widget.data!.postTag!.first,widget.data!.postTag!.last,widget.data!.postImage!);
+        post_modal(context, widget.data!.postTitle!,
+            widget.data!.postTag!.first,widget.data!.postTag!.last,
+            widget.data!.postImage!,scrapStatus);
     },
       child: Container(
         width: 960 / 2.5,

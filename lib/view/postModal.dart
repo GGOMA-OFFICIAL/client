@@ -4,8 +4,9 @@ import 'package:get/get.dart';
 import '../controller/workpostmodal_controller.dart';
 
 void post_modal(BuildContext context, String post_title, String tag1,
-    String tag2, String post_image) {
-  final WorkPostModalController cardpostcontroller = Get.put(WorkPostModalController());
+    String tag2, String post_image, Future<bool> scrapStatus) {
+  final WorkPostModalController cardpostcontroller =
+      Get.put(WorkPostModalController());
 
   showModalBottomSheet(
       context: context,
@@ -38,15 +39,39 @@ void post_modal(BuildContext context, String post_title, String tag1,
                               color: Color(0xffFFBC0E),
                             ),
                           ),
-                          IconButton(
-                            onPressed: () {
-                              //todo: scrap구현할 것
+                          FutureBuilder<bool>(
+                            future: scrapStatus,
+                            builder: (context, snapshot) {
+                              if (snapshot.connectionState ==
+                                  ConnectionState.waiting) {
+                                // 데이터 로딩 중
+                                return CircularProgressIndicator();
+                              }
+                              if (snapshot.hasError) {
+                                print('Error: ${snapshot.error}');
+                                // 에러 처리
+                                return Text('error');
+                              }
+
+                              bool isScrapped = snapshot.data ?? false;
+                              return Row(
+                                children: [
+                                  SizedBox(width: 177),
+                                  IconButton(
+                                    iconSize: 80 / 2.5,
+                                    icon: Icon(
+                                      isScrapped
+                                          ? CupertinoIcons.bookmark
+                                          : CupertinoIcons.bookmark_solid,
+                                      color: Color(0xffFFBC0E),
+                                    ),
+                                    onPressed: () {
+                                      // todo : scrap 로직 구현
+                                    },
+                                  ),
+                                ],
+                              );
                             },
-                            icon: Icon(
-                              CupertinoIcons.bookmark,
-                              size: 80 / 2.5,
-                              color: Color(0xffFFBC0E),
-                            ),
                           ),
                         ],
                       ), //뒤로가기, 북마크 아이콘
