@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '../model/post_model.dart';
 import '../model/scrap_model.dart';
 import 'CardPostView.dart';
-import 'Cardpost.dart';
+import 'postModal.dart';
 
 class Post extends StatefulWidget {
   final Data? data;
@@ -36,7 +36,7 @@ class _PostState extends State<Post> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        card_post_modal(context, widget.data!.postTitle!,widget.data!.postTag!.first,widget.data!.postTag!.last,widget.data!.postImage!);
+        work_post_modal(context, widget.data!.postTitle!,widget.data!.postTag!.first,widget.data!.postTag!.last,widget.data!.postImage!);
     },
       child: Container(
         width: 960 / 2.5,

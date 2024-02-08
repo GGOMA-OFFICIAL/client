@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import '../controller/cardpost_controller.dart';
 
-void card_post_modal(BuildContext context, String post_title, String tag1,
+void work_post_modal(BuildContext context, String post_title, String tag1,
     String tag2, String post_image) {
   final CardPostController cardpostcontroller = Get.put(CardPostController());
 
@@ -174,9 +174,7 @@ void card_post_modal(BuildContext context, String post_title, String tag1,
                                         ],
                                       ),
                                     ),
-                                    SizedBox(
-                                      height: 90 / 2.5,
-                                    )
+                                    SizedBox(height: 90 / 2.5)
                                   ],
                                 );
                               },
@@ -185,19 +183,17 @@ void card_post_modal(BuildContext context, String post_title, String tag1,
                         ),
                       ),
                       SizedBox(height: 90 / 2.5),
-
                     ],
                   ),
                 ),
                 Container(
                   alignment: Alignment.center,
-                  height: 100/2.5,
+                  height: 100 / 2.5,
                   width: 432,
                   color: Color(0xffFFDF6C),
                   child: Text(
                     '@GGOMA',
                     textAlign: TextAlign.center,
-
                     style: TextStyle(
                         color: Color(0xff494949),
                         fontSize: 20 / 2.5,

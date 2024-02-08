@@ -14,7 +14,7 @@ class CardPostController extends GetxController{
   Future<void> fetchCardsFromLocalJson() async{
     try {
       final String response = await rootBundle.loadString(
-          'assets/test/cardpost.json');
+          'assets/test/workpost_m.json');
       final data = json.decode(response);
       Cards.value = CardPostModel.fromJson(data);
     } catch (e) {
