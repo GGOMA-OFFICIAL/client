@@ -1,9 +1,11 @@
 class ScrapModel {
+  int? totalscrap;
   ScrapStatus? scrapStatus;
 
-  ScrapModel({this.scrapStatus});
+  ScrapModel({this.totalscrap, this.scrapStatus});
 
   ScrapModel.fromJson(Map<String, dynamic> json) {
+    totalscrap = json['totalscrap'];
     scrapStatus = json['scrapStatus'] != null
         ? new ScrapStatus.fromJson(json['scrapStatus'])
         : null;
@@ -11,6 +13,7 @@ class ScrapModel {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['totalscrap'] = this.totalscrap;
     if (this.scrapStatus != null) {
       data['scrapStatus'] = this.scrapStatus!.toJson();
     }
@@ -31,3 +34,6 @@ class ScrapStatus {
     return posts;
   }
 }
+
+
+
