@@ -1,26 +1,26 @@
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:get/get.dart';
 import 'dart:convert';
-import '../model/postmodal_model.dart';
+import '../model/post_model.dart';
 
-class WorkPostModalController extends GetxController{
-  var Works = PostModalModel().obs;
+class CardPostController extends GetxController {
+  var CardPosts = PostModel().obs;
 
   @override
-  void onInit(){
+  void onInit() {
     super.onInit();
-    fetchCardsFromLocalJson();
+    fetchPostsFromLocalJson();
   }
-  Future<void> fetchCardsFromLocalJson() async{
+
+  Future<void> fetchPostsFromLocalJson() async {
     try {
       final String response = await rootBundle.loadString(
-          'assets/test/workpost_m.json');
+          'assets/test/cardpost.json');
       final data = json.decode(response);
-      Works.value = PostModalModel.fromJson(data);
+      CardPosts.value = PostModel.fromJson(data);
     } catch (e) {
       // 오류 처리
       print('JSON 파일 로드 또는 파싱 중 오류 발생: $e');
     }
   }
 }
-
