@@ -28,6 +28,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0.0,
         leading: IconButton(
           icon: const Icon(Icons.account_circle),
           iconSize: 35,
