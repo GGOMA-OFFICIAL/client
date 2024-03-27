@@ -11,15 +11,18 @@
 ## 기술 스택
 ### Front-End
 * flutter
-* dio lib
-* getX lib
-* MVC model
+* dio package
+* get package
+* cupertino_icons package
+* kakao_flutter_sdk package
+* http package
+* MVC architecture
 
 ### Back-End
 * Spring-boot
 
 ### Design
-* Pigma
+* Figma
 
 ### Cooperation Tool
 * Notion
